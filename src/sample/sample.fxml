@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="385.0" prefWidth="656.0">
+            <children>
+                <Button fx:id="addStation" layoutX="372.0" layoutY="272.0" mnemonicParsing="false" onAction="#addStation" prefWidth="130.0" text="Add Station" />
+                <Button fx:id="deleteLine" layoutX="224.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteLine" prefWidth="130.0" text="Delete Line" />
+                <Button fx:id="updateLine" layoutX="224.0" layoutY="310.0" mnemonicParsing="false" onAction="#updateLine" prefWidth="130.0" text="Update Line" />
+                <Button fx:id="addLine" layoutX="223.0" layoutY="272.0" mnemonicParsing="false" onAction="#addLine" prefWidth="130.0" text="Add Line" />
+                <TreeView fx:id="treeView" layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="200.0" />
+                <TextField fx:id="idStation" layoutX="273.0" layoutY="50.0" prefHeight="25.0" prefWidth="111.0" />
+                <TextField fx:id="name" layoutX="273.0" layoutY="85.0" prefHeight="25.0" prefWidth="111.0" />
+                <TextField fx:id="idLine" layoutX="438.0" layoutY="52.0" prefHeight="25.0" prefWidth="111.0" />
+                <TextField fx:id="colorLine" layoutX="438.0" layoutY="87.0" prefHeight="25.0" prefWidth="111.0" />
+                <Button fx:id="updateStation" layoutX="372.0" layoutY="310.0" mnemonicParsing="false" onAction="#updateLine" prefWidth="130.0" text="Update station" />
+                <Button fx:id="deleteStation" layoutX="372.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteStation" prefWidth="130.0" text="Delete station" />
+                <Label fx:id="information" layoutX="564.0" layoutY="123.0" />
+                <Label layoutX="499.0" layoutY="132.0" text="Info:" />
+                <Label layoutX="437.0" layoutY="29.0" text="Line" />
+                <Label layoutX="273.0" layoutY="29.0" text="Station" />
+                <Label layoutX="223.0" layoutY="54.0" text="Station_id" />
+                <Label layoutX="224.0" layoutY="89.0" text="Name" />
+                <Label layoutX="398.0" layoutY="56.0" text="Line_id" />
+                <Label layoutX="398.0" layoutY="91.0" text="Color" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>
